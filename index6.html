@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>JavaScript Exercício 6</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+</style>
+</head>
+<body>
+
+    <h1> Exercícios JavaScript</h1>
+    
+ <p> 6.Escreva um programa JavaScript para determinar se um determinado ano é bissexto no calendário gregoriano. </p> 
+
+ <form id="search">
+  <label>Enter a year you want to check and press enter:</label>
+  
+  <input type="text" name="checkyear" placeholder="Year">
+  </form>
+
+ <script>
+const search = document.querySelector('#search');
+const answer = document.querySelector('#answer');
+
+const calc = year =>{
+const check = year / 4 % 0;
+if((year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0)){
+alert('It is a leap year');
+} else {
+alert('It is not a leap year');
+}
+}
+search.addEventListener('submit', y => {
+y.preventDefault();
+const year = Number.parseInt(search.checkyear.value);
+calc(year);
+});
+ </script>
+<br>
+
+<img src="Capturar 6.PNG" alt="">
+</body>
+</html>

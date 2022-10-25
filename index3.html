@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>JavaScript Exercício 3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+</style>
+</head>
+<body>
+
+    <h1> Exercícios JavaScript</h1>
+    
+
+ <p> 3. Escreva um programa JavaScript para obter a data atual. </p> 
+
+ <button onclick="document.getElementById('demo').innerHTML = (dataAtual)">Click me to display Date</button>
+<p id="demo"></p>
+ <script>
+    var data = new Date();
+    var dia = String(data.getDate()).padStart(2, '0');
+    var mes = String(data.getMonth() + 1).padStart(2, '0');
+    var ano = data.getFullYear();
+    dataAtual = dia + '/' + mes + '/' + ano;
+
+</script>
+<img src="Capturar 3.PNG" alt="">
+
+</body>
+</html>

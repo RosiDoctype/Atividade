@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>JavaScript Exercício 11</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+</style>
+</head>
+<body>
+
+    <h1>Exercícios JavaScript</h1>
+    
+ <p> 11.Escreva um programa JavaScript para converter temperaturas de e para Celsius, Fahrenheit. </p>
+ 
+
+ <script>
+    function cToF(celsius) 
+{
+  var cTemp = celsius;
+  var cToFahr = cTemp * 9 / 5 + 32;
+  var message = cTemp+'\xB0C é ' + cToFahr + ' \xB0F.';
+    document.write(message);
+    document.write("<br>");
+}
+
+function fToC(fahrenheit) 
+{
+  var fTemp = fahrenheit;
+  var fToCel = (fTemp - 32) * 5 / 9;
+  var message = fTemp+'\xB0F é ' + fToCel + '\xB0C.';
+    document.write(message);
+    document.write("<br>");
+} 
+cToF(60);
+fToC(45);
+
+ </script>
+<img src="Capturar 11.PNG" alt="">
+</body>
+</html>

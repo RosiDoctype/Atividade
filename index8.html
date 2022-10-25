@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>JavaScript Exercício 8</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+</style>   
+</head>
+<body>
+
+    <h1> Exercícios JavaScript</h1>
+    
+ <p> 8. Escreva um programa JavaScript em que o programa receba um número inteiro aleatório entre 1 e 10, 
+    o usuário é solicitado a inserir um número de adivinhação. Se a entrada do usuário corresponder 
+    ao número de palpite, o programa exibirá uma mensagem "Bom trabalho", caso contrário exibirá 
+    uma mensagem "Não correspondido".  </p>
+    <button onclick="document.getElementById('demo').innerHTML =(num) ">Diga um numero</button>
+ <p id="demo"></p>
+   
+    <script>
+       const num = Math.ceil(Math.random() * 10);
+console.log(num);
+ const gnum = prompt('Guess the number between 1 and 10 inclusive');
+ if (gnum == num)
+   alert('Matched');
+  else
+   alert('Not matched, the number was '+gnum);
+    </script>
+
+    <img src="Capturar 8.PNG" alt="">
+</body>
+</html>
+
+
+
+
+

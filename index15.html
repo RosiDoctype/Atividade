@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>JavaScript Exercício 15</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+</style>   
+</head>
+<body>
+
+    <h1> Exercícios JavaScript</h1>
+    <p>15. Escreva um programa JavaScript para obter a diferença entre um determinado número e 13, se o número for 
+        maior que 13 retorne o dobro da diferença absoluta. </p>
+
+    <script>
+     let n = prompt('Diga seu número');
+const result =
+13 >= n
+? `${n} é menor que 13` + `\n` + `Diferença: ${13 - n}`
+: `${n} é maior que 13` +
+`\n` +
+`O dobro da diferença é : ${(n - 13) * 2}`;
+
+document.write(result);
+</script>
+
+<img src="capturar 15.PNG" alt="">
+</body>
+</html>
+

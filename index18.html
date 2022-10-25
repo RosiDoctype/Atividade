@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <title>JavaScript Exercício 15</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    </style>   
+    </head>
+
+<h2>JavaScript While Loop</h2>
+<p id="demo"></p>
+
+<script>
+    const cars = ["Range Rover", "Lamboghini", "HB20", "Golzinho", "Peogeot"];
+
+let i = 0;
+let text = "";
+for (;cars[i];) {
+  text += cars[i] + "<br>";
+  i++;
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+<img src="Capturar 18.PNG" alt="">
+</body>
+</html>

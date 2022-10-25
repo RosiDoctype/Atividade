@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>JavaScript Exercício 7</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+</style>
+</head>
+<body>
+
+    <h1> Exercícios JavaScript</h1>
+    
+ <p> 7.Escreva um programa JavaScript para descobrir que 1º de janeiro é um domingo entre 2014 e 2050. </p> 
+ <button onclick="document.getElementById('demo').innerHTML =(fim) ">Click me to know the year</button>
+ <p id="demo"></p>
+
+ <script>
+    for (var year = 2014; year <= 2050; year++)
+    {
+    var d = new Date(year, 0, 1);
+    if ( d.getDay() === 0 )
+       var fim= ("1st January is being a Sunday in  "+year);
+    }
+ </script>
+ <img src="Capturar 7.PNG" alt="">
+</body>
+</html>

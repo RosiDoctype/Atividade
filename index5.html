@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>JavaScript Exercício 5</title>
+<script type="text/javascript">
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+</style>
+</head>
+<body>
+
+    <h1>Exercícios JavaScript</h1>
+    
+ <p> 5. Escreva um programa JavaScript para girar a string 'w3resource' na direção certa, removendo periodicamente uma 
+    letra do final da string e anexando-a à frente.  </p>
+            <body onload="animate_string('target')">
+            <pre id="target">w3resource </pre>
+ </body>
+
+
+    <script>
+    function animate_string(id) 
+{
+    var element = document.getElementById(id);
+    var textNode = element.childNodes[0]; // assuming no other children
+    var text = textNode.data;
+
+setInterval(function () 
+{
+ text = text[text.length - 1] + text.substring(0, text.length - 1);
+  textNode.data = text;
+}, 100);
+}
+</script>
+<img src="Capturar 5.PNG" alt="">
+</body>
+</html>

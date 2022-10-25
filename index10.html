@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>JavaScript Exercício 10</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+</style>   
+</head>
+<body>
+
+    <h1> Exercícios JavaScript</h1>
+    <p>10.Escreva um programa JavaScript para calcular a multiplicação e divisão de dois números (entrada do usuário).</p>
+    <form>
+        1st Number : <input type="text" id="firstNumber" /><br>
+        2nd Number: <input type="text" id="secondNumber" /><br>
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="divideBy()" Value="Divide" />
+        </form>
+        <p>The Result is : <br>
+        <span id = "result"></span>
+
+        <script>
+            function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+        </script>
+        </p>
+        <img src="Capturar 10.PNG" alt="">
+</body>
+</html>
